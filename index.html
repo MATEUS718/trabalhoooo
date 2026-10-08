@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071d24">
+  <title>ABISMO // O sino afogado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <a class="wordmark" href="#inicio" aria-label="Abismo, início"><span class="wordmark-mark">A</span><span>ABISMO<small>ARQUIVO 03 · FOSSA DAS SEREIAS</small></span></a>
+      <div class="air-readout"><span class="readout-label">PRESSÃO</span><span class="readout-value">04.872 <i>m</i></span></div>
+    </header>
+    <section class="game-frame" aria-label="Jogo Abismo">
+      <div class="screen-top"><span id="chapter-label">REGISTRO 01 / 03</span><span id="objective-label">ENCONTRE O SINAL</span><span id="status-label">SINAL PERDIDO</span></div>
+      <canvas id="game" width="960" height="540" aria-label="Mergulhador no fundo do mar"></canvas>
+      <div class="screen-bottom"><span id="stage-name">01 — O JARDIM CEGO</span><span id="hint-label">E · ATIVAR O SINAL</span><span class="depth-label">ZONA ABISSAL <span>●</span></span></div>
+      <div id="overlay" class="overlay">
+        <div class="overlay-content">
+          <div class="eyebrow"><span class="signal-dot"></span> TRANSMISSÃO RECUPERADA · 03 FASES</div>
+          <h1>O sino<br><em>afogado.</em></h1>
+          <p>Algo lá embaixo respondeu ao seu sinal.<br>Agora, está vindo buscar você.</p>
+          <button id="start-button" class="start-button" type="button">INICIAR MERGULHO <span>↗</span></button>
+          <div class="key-guide"><kbd>A</kbd><kbd>D</kbd> MOVER <kbd>W</kbd> SUBIR <kbd>S</kbd> MERGULHAR / ESCONDER <kbd>ESPAÇO</kbd> BRAÇADA <kbd>E</kbd> INTERAGIR</div>
+        </div>
+        <div class="overlay-index">MERGULHO Nº 017 <span>·</span> SEM EQUIPE DE RESGATE</div>
+      </div>
+      <div id="message" class="message" aria-live="polite"></div>
+    </section>
+    <footer class="footer"><span>UMA HISTÓRIA DE PROFUNDIDADE E SILÊNCIO</span><button id="sound-button" type="button" aria-label="Alternar som" title="Alternar som">♪ <span>SOM</span></button><span class="footer-right">NÃO OLHE PARA TRÁS&nbsp; ↘</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
